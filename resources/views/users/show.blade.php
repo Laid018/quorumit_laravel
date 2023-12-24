@@ -12,7 +12,11 @@
                 Email: {{ $user->email }}
             </div>
             <div>
+                @if (isset($user->roles[0]))
                 Rol: {{ $user->roles[0]->name }}
+                @else
+                Sin rol
+                @endif
             </div>
         </div>
 

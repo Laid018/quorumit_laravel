@@ -5,8 +5,8 @@
         <h1>Update user</h1>
 
         <div class="container mt-4">
-            <form action="{{ route('users.update', $user->id) }}">
-                @method('put')
+            <form method="POST" action="{{ route('users.update', $user->id) }}">
+                @method('PUT')
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -38,7 +38,7 @@
                         name="role" required>
                         <option value="">Select role</option>
                         @foreach($roles as $role)
-                            <option value="{{ $role->id }}"
+                            <option value="{{ $role->name }}"
                                 {{ in_array($role->name, $userRole) 
                                     ? 'selected'
                                     : '' }}>{{ $role->name }}</option>

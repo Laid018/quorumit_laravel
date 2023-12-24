@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateUserRequest extends FormRequest
@@ -21,12 +22,12 @@ class UpdateUserRequest extends FormRequest
      */
     public function rules(): array
     {
-        $user = request()->route('user');
+        $id = request()->route('id');
+        $user = User::find($id);
 
         return [
             'name' => 'required',
             'email' => 'required|email|unique:users,email,'.$user->id,
-            'username' => 'required|unique:users,username,'.$user->id,
         ];
     }
 }
