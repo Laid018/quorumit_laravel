@@ -36,7 +36,8 @@ RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 
 
 WORKDIR /app
-COPY . .
+COPY . /app
+
 RUN composer install
 
 #Installing node 16.x
@@ -45,3 +46,6 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x| bash -
 RUN apt-get update && apt-get install -y nodejs npm
 
 RUN npm install
+
+EXPOSE 8000
+CMD php artisan serve --host=0.0.0.0 --port=8000

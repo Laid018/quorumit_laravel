@@ -17,22 +17,22 @@ cd quorumite_laravel
 ```
 
 # Uso con docker
-Ingresar a la terminal y ejectuar **docker-compose up -d --build**, para correr la aplicación con docker.
+Ingresar a la terminal y ejectuar ``docker-compose up -d --build``, para correr la aplicación con docker.
 Solo es necesario ingresar a la carpeta del proyecto y ejecutar ``docker compose up -d`` para levantar los servicios. Y se baja los servicios con ``docker compose down``.
 
 # Uso de manera local
 Ingresar a la terminal y ejectuar los siguietes comandos, para correr la aplicación sin problemas.
-**composer install**
-**npm install**
+``composer install``
+``npm install``
 
 Para la base de datos se debe crear la base de datos en mysql.
 Nombre de la base de datos: ``quorumitdb_laravel``
 Una vez creada la base de datos correr las migraciones
-**php artisan migrate --seed**
+``php artisan migrate --seed``
 
 Para correr la app ejecutar
-**php artisan serve**
-**npm run dev**
+``php artisan serve``
+``npm run dev``
 
 
 # URLs para ingresar:
@@ -59,10 +59,10 @@ docker compose ps
 
 para compilar **assets** vite.js:
 ```bash
-docker exec -it Serve npm run build
+docker exec -it app npm run build
 ```
 
 para correr en local **assets** vite.js:
 ```bash
-docker exec -it Serve npm run dev
+docker exec -it app npm run dev
 ```

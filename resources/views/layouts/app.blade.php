@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/build/assets/app-lhA9k1qk.css">
     <script src="/build/assets/app-3p1U0b5n.js"></script>
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 </head>
 <body>
     <div id="app">

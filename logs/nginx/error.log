@@ -1,0 +1,5 @@
+2023/12/24 14:40:03 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:18
+2023/12/24 14:43:41 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:18
+2023/12/24 14:45:01 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:18
+2023/12/24 14:46:50 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:18
+2023/12/24 14:48:20 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:18
