@@ -58,7 +58,9 @@
                     @endforeach
                 </table>
 
+                @can('Update role')
                 <button type="submit" class="btn btn-primary">Save changes</button>
+                @endcan
                 <a href="{{ route('roles.index') }}" class="btn btn-light shadow-sm">Back</a>
             </form>
         </div>

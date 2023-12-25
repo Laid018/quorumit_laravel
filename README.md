@@ -15,6 +15,10 @@
 git clone git@github.com:Laid018/quorumite_laravel.git
 cd quorumite_laravel
 ```
+
+Create database ``quorumitdb_laravel`` in mysql.
+
+Command for installing dependencies the laravel:
 ```bash
 composer install
 ```
@@ -76,6 +80,14 @@ npm run dev
 
 * Verify that the browser has not changed the HTTP protocol to HTTPS (If so, it must be disabled in the browser settings so that it does not do so)
 
+# Users for test
+
+| Email               | Password     | Role      |
+| ------------------  | ------------ | --------- |
+| quorumit@gmail.com  | admin123     | admin     |
+| user@gmail.com      | user123      | user      |
+| secretary@gmail.com | secretary123 | secretary |
+
 # Data Database
 host: **127.0.0.1**
 
@@ -103,4 +115,15 @@ docker exec -it app npm run build
 to run locally **assets** vite.js:
 ```bash
 docker exec -it app npm run dev
+```
+
+# Test
+* New user register.
+* Add role user.
+* Product update.
+* User delete.
+
+Command for executing the tests
+```bash 
+docker exec -it app php artisan test
 ```

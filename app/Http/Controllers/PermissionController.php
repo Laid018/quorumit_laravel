@@ -7,11 +7,16 @@ use Spatie\Permission\Models\Permission;
 
 class PermissionController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['role:admin', 'permission:Show permission|Create permission']);
+    }
+
     /**
      * Display all permission
      * @return \Illuminate\Http\Response
      */
-    public function index() 
+    public function index()
     {
         $permissions = Permission::latest()->paginate(10);
 
@@ -22,7 +27,7 @@ class PermissionController extends Controller
      * Show form for creating permission
      * @return \Illuminate\Http\Response
      */
-    public function create() 
+    public function create()
     {
         $permissions = Permission::all();
         return view('permissions.create', compact('permissions'));
@@ -34,7 +39,7 @@ class PermissionController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) 
+    public function store(Request $request)
     {
         $request->validate([
             "name" => "required|unique:permissions,name",
@@ -52,7 +57,7 @@ class PermissionController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function show(int $id) 
+    public function show(int $id)
     {
         $permission = Permission::find($id);
         return view('permissions.show', [
@@ -67,7 +72,7 @@ class PermissionController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function edit(int $id) 
+    public function edit(int $id)
     {
         $permission = Permission::find($id);
         $permissions = Permission::all();
@@ -86,7 +91,7 @@ class PermissionController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function update(int $id, Request $request) 
+    public function update(int $id, Request $request)
     {
         $request->validate(['name' => 'required']);
         $permission = Permission::find($id);
@@ -103,7 +108,7 @@ class PermissionController extends Controller
      * 
      * @return \Illuminate\Http\Response
      */
-    public function destroy(int $id) 
+    public function destroy(int $id)
     {
         $permission = Permission::findById($id);
         $permission->delete();

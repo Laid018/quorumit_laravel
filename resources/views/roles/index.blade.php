@@ -25,7 +25,7 @@
                 <td>{{ $role->id }}</td>
                 <td>{{ $role->name }}</td>
                 <td>
-                    @can('Detail role')
+                    @can('Show role')
                     <a class="btn btn-light btn-sm rounded-lg shadow-sm" href="{{ route('roles.show', $role->id) }}">
                         <i class="bi bi-eye text-success"></i>
                     </a>
@@ -39,7 +39,7 @@
                     @endcan
                 </td>
                 <td>
-                    @can('Create role')
+                    @can('Delete role')
                     <form action="{{route('roles.destroy',$role->id)}}" method="post" style="display: inline">
                         @csrf
                         @method('delete')

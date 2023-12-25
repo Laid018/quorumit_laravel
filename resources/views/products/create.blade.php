@@ -50,7 +50,9 @@
                     @endif
                 </div>
 
+                @can('Create product')
                 <button type="submit" class="btn btn-primary">Save product</button>
+                @endcan                    
                 <a href="{{ route('products.index') }}" class="btn btn-light shadow-sm">Back</a>
             </form>
         </div>

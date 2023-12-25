@@ -21,8 +21,10 @@
           </table>
         </div>
         <div class="mt-4">
-            <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary">Edit</a>
-            <a href="{{ route('products.index') }}" class="btn btn-light shadow-sm">Back</a>
+          @can('Update product')
+          <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary">Edit</a>
+          @endcan
+          <a href="{{ route('products.index') }}" class="btn btn-light shadow-sm">Back</a>
         </div>
     </div>
 

@@ -64,7 +64,9 @@
                         required autocomplete="confirm-password">
                 </div>
 
+                @can('Create user')
                 <button type="submit" class="btn btn-primary">Save user</button>
+                @endcan
                 <a href="{{ route('users.index') }}" class="btn btn-default">Back</a>
             </form>
         </div>

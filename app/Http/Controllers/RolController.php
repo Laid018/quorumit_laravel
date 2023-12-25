@@ -8,6 +8,10 @@ use Spatie\Permission\Models\Role;
 
 class RolController extends Controller
 {
+    public function __construct() {
+        $this->middleware(['role:admin', 'permission:Show role|Create role']);
+    }
+
   /**
      * Display all roles
      * @return \Illuminate\Http\Response

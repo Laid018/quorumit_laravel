@@ -49,7 +49,9 @@
                     @endif
                 </div>
 
+                @can('Update user')
                 <button type="submit" class="btn btn-primary">Update user</button>
+                @endcan
                 <a href="{{ route('users.index') }}" class="btn btn-default">Cancel</button>
             </form>
         </div>

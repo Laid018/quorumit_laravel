@@ -23,7 +23,9 @@
                     @endif
                 </div>
 
+                @can('Create permission')
                 <button type="submit" class="btn btn-primary">Save permission</button>
+                @endcan
                 <a href="{{ route('permissions.index') }}" class="btn btn-light shadow-sm">Back</a>
             </form>
         </div>

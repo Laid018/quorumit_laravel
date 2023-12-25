@@ -22,7 +22,9 @@
         </div>
 
         <div class="mt-4">
+            @can('Update role')
             <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-primary">Edit</a>
+            @endcan
             <a href="{{ route('roles.index') }}" class="btn btn-light shadow-sm">Back</a>
         </div>
     </div>
