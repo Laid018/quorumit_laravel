@@ -10,6 +10,11 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- Styles -->
         <style>
             .title {
@@ -66,6 +71,121 @@
                     </p>
                 </div>
 
+
+        <section style="background-color: #eee;" class="border-0 rounded-lg shadow-sm mt-5">
+        <div class="container py-5">
+            <h4 class="text-center mb-5"><strong>Product listing</strong><h4>
+
+            <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(1).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$123</span>
+                        </h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(2).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$239</span></h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(3).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$147</span></h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded ripple-surface">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(4).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$83</span></h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(5).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$106</span></h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/new/img(6).webp"
+                    class="w-100" />
+                <a href="{{route('products.index')}}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="d-flex justify-content-start align-items-start h-100">
+                        <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$58</span></h5>
+                    </div>
+                    </div>
+                    <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+                
                 <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
                         <div class="flex items-center gap-4">
@@ -84,5 +204,8 @@
                 </div>
             </div>
         </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>
